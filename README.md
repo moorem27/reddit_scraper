@@ -6,7 +6,7 @@ $ chmod +x scraper.py
 // Read the documentation on 'Authenticating via OAuth'  
 // at https://praw.readthedocs.io/en/latest  
   
-vim scraper.py  
+// Open scraper.py  
   
 // Enter values for 'client_id', 'client_secret', and  
 // 'user_agent' after following instructions to authenticate   
