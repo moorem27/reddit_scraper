@@ -1,1 +1,5 @@
 comments_scraper.py
+.idea/
+output.txt
+reddit_scraper.py
+scour.py
