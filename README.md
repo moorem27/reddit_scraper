@@ -1,7 +1,7 @@
-sudo apt install python-pip  
-pip install praw  
-pip install --upgrade pip  
-chmod +x scraper.py  
+$ sudo apt install python-pip  
+$ pip install praw  
+$ pip install --upgrade pip  
+$ chmod +x scraper.py  
 
 // Read the documentation on 'Authenticating via OAuth'  
 // at https://praw.readthedocs.io/en/latest  
