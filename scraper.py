@@ -18,6 +18,7 @@ sub_reddits = { "democrats", "Republican", "Politics",
 post_limit = 1000
 time = 'year'
 
+#sample client_id, client_secret, password, username, and user_agent                                              
 reddit = praw.Reddit(client_id='Dfxf324dssf',
 		     client_secret='fDFDFLAK8felksdfjliesfdsa',
 		     password='password',
