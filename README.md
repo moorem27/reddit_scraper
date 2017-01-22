@@ -12,13 +12,10 @@ $ pip install --upgrade pip
 $ chmod +x scraper.py  
 
 ## Note:
-Read the documentation on 'Authenticating via OAuth'  
-at https://praw.readthedocs.io/en/latest. After 
-following instructions provided by the link, the 
-'client_id', 'client_secret', 'password', 'username', 
-and 'user_agent' fields need to be updated in both
-scripts before use (Note: Be careful not to push your
-Reddit username and password to GitHub)  
+Read the documentation on 'Authenticating via OAuth' at https://praw.readthedocs.io/en/latest.   
+After following instructions provided by the link, the 'client_id', 'client_secret', 'password',   
+'username', and 'user_agent' fields need to be updated in both scripts before use   
+(Note: Be careful not to push your Reddit username and password to GitHub)  
 
 
 ## Sample output for searching submission titles for these names   
