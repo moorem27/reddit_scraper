@@ -1,5 +1,6 @@
 comments_scraper.py
 .idea/
 output.txt
+comment_output.txt
 reddit_scraper.py
 scour.py
