@@ -1,12 +1,12 @@
 # Description  
 
-The scripts are used to parse various subreddit submission titles  
+The scripts are used to parse various subreddit submission titles    
 and comments. 
 
 
 # Installation
-Install PRAW 
-For sentiment analysis install NLTK
+Install PRAW    
+For sentiment analysis install NLTK  
 
 ## Note:
 Read the documentation on 'Authenticating via OAuth' at https://praw.readthedocs.io/en/latest.   
