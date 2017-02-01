@@ -1,0 +1,30 @@
+I love Chipotle.
+compound: 0.6369, 
+neg: 0.0, 
+neu: 0.192, 
+pos: 0.808, 
+ 
+That burrito was great.
+compound: 0.6249, 
+neg: 0.0, 
+neu: 0.423, 
+pos: 0.577, 
+ 
+Good job, you ruined the bathroom.
+compound: -0.0516, 
+neg: 0.31, 
+neu: 0.4, 
+pos: 0.29, 
+ 
+Mount Doom is smoldering.
+compound: -0.4019, 
+neg: 0.474, 
+neu: 0.526, 
+pos: 0.0, 
+ 
+Great, now I have food poisoning.
+compound: 0.0772, 
+neg: 0.349, 
+neu: 0.275, 
+pos: 0.376, 
+ 
