@@ -24,7 +24,6 @@ subreddit_sentiment  = 0
 # Number of data points
 n_subreddit  = 1
 
-# TODO Break this monstrosity down into functions
 if len(sys.argv) > 1:
     # For each argument (subreddit)
     for a in sys.argv:
@@ -32,15 +31,14 @@ if len(sys.argv) > 1:
         if(a != sys.argv[0]):
             subreddit = reddit.subreddit(a)
 	    print(subreddit)
-	    hot_list = subreddit.hot(params={'t':'year'}, limit=1000)
-	    
+	    hot_list = subreddit.hot(params={'t':'year'}, limit=1000)	    
 	    # The current subreddit average
 	    subreddit_average = 0
-	    # For each submission ID, use the ID to create a submission
+	    # For each submission in the subreddit
 	    for sub_id in hot_list:
                 submission = reddit.submission(id=sub_id)
 
-	    	# For each submission use new variables for the average
+	    	# Use new variables for the average
 		comment_sentiment = 0
 		comment_count = 0
 		average = 0
@@ -49,6 +47,7 @@ if len(sys.argv) > 1:
 		submission.comments.replace_more(limit=0)
                 # For each comment in the submission calculate the sentiment 
                 for comment in submission.comments.list():
+                    comment_count += 1
                     text = str((comment.body).encode('utf-8').strip())
 		    sid = SentimentIntensityAnalyzer()
 		    ss = sid.polarity_scores(text)
@@ -57,11 +56,10 @@ if len(sys.argv) > 1:
 			# Grab the comment sentiment and increment the total count
 	                if(k == 'compound'):
                             comment_sentiment += ss[k]
-                            comment_count += 1
 	                    
 
 		# Ensure that submission has comments
-		if(comment_count != 0):
+		if(comment_count > 0 and comment_sentiment > 0):
  		    average = comment_sentiment/comment_count
 		# Increment the subreddit sentiment by the average of previous submissions
                 subreddit_sentiment += average
@@ -77,4 +75,4 @@ if len(sys.argv) > 1:
     # Clear average and count for subreddit before new subreddit
     subreddit_sentiment = 0
     n_subreddit = 0
-    
+    print(" ") 
